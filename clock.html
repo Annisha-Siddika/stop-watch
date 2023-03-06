@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-sky-300 text-white">
+    <div class="text-center mt-[16%] " >
+        <h1 class="text-4xl mb-12">Stop Watch</h1>
+        <div class="flex justify-center">
+            <div class="text-5xl font-bold px-4 py-2 w-28 mx-2 border border-4 rounded border-gray-500" id="min">00</div>
+            <span class="text-5xl font-bold py-2">:</span>
+            <div class="text-5xl font-bold px-4 py-2 w-28 mx-2 border border-4 rounded border-gray-500" id="sec">00</div>
+            <span class="text-5xl font-bold py-2">:</span>
+            <div class="text-5xl font-bold px-4 py-2 w-28 mx-2 border border-4 rounded border-gray-500" id="mili-sec">00</div>
+            
+        </div>
+    </div>
+    <div class="flex justify-evenly mt-16 mb-[16%] mx-[30%]">
+        <button value="OFF" onclick="f1();" id="start" class="sm:text-2xl lg:text-4xl  font-bold bg-white text-sky-300 px-6 py-2 mr-4 rounded-lg border border-r-4 border-b-4 border-gray-500 ">Start</button>
+    <button id="stop" class="sm:text-2xl lg:text-4xl  font-bold bg-white text-sky-300 px-6 py-2 mr-4  rounded-lg border border-r-4 border-b-4 border-gray-500">Stop</button>
+    <button id="reset" class="sm:text-2xl lg:text-4xl  font-bold bg-white text-sky-300 px-6 py-2 rounded-lg border border-r-4 border-b-4 border-gray-500">Reset</button>
+    </div>
+
+    <script src="./clock.js"></script>
+</body>
+</html>
